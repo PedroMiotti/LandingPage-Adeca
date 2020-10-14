@@ -1,0 +1,255 @@
+body{
+    overflow-x: hidden;
+    background-color: var(--primary-green);
+}
+
+
+/* Navbar  */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+    background-color: transparent;
+
+}
+
+.logo-adeca img{
+    width: 70px;
+    height: 70px;
+}
+
+.navbuttons-container{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbuttons-container a{
+    text-decoration: none;
+    font-family: var(--font-poppins)
+    
+}
+
+.navbuttons{
+    width: 500px;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.navbuttons a{
+    color: #fff;
+    padding: 40px auto;
+    
+}
+
+.navbuttonContato{
+    background-color: var(--primary-green);
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.navbuttonContato a{
+    color: #ffff;
+}
+
+
+
+/* Home  */
+
+.overlay{
+    width: 100vw;
+    height: 95vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color:  var(--primary-green);
+    opacity: 0.5;
+
+    border-bottom-left-radius: 400px;
+
+
+}
+
+.home-container{
+    overflow: hidden;
+    width: 100vw;
+    border-bottom-left-radius: 400px;
+    box-shadow: 3px 4px 35px -10px rgba(0,0,0,0.75);
+
+}
+
+.home-container img{
+    width: auto;
+    height: 95vh;
+}
+
+.home-container-info{
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    z-index: 2;
+}
+
+.home-container-info .col1 h1{
+    color: #fff;
+    font-family: var(--font-poppins);
+    font-size: 3em;
+    font-weight: 300;
+
+}
+
+.home-container-info .col1 h1 span{
+    color: #fff;
+    font-family: var(--font-poppins);
+    font-size: 1.6em;
+    font-weight: 900;
+
+}
+
+.home-container-info .col1 p{
+    color: #fff;
+    font-family: var(--font-poppins);
+    font-size: 1.1em;
+    font-weight: 300;
+    background-color:  rgba(41, 85, 52, 0.5);
+
+    padding: 4px;
+
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+    typing 3.2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { 
+        width: 0 
+    }
+
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fff; }
+}
+
+
+/* Estica a imagem para telas muito grandes  */
+@media screen and (min-width: 2134px){
+    .home-container img{
+        width: 100vw;
+    }
+}
+
+
+/* Servicos  */
+
+.servicos-container{
+    width: 100vw;
+}
+
+.servicos-titulo h1{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    color: #fff;
+    margin: 50px 30px 0 30px;
+}
+
+.servicos-titulo hr{
+    width: 100px;
+    border: 3px solid #fff;
+    margin: 5px 30px 50px 30px;
+
+}
+
+
+
+.servicos-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+
+}
+
+.servicos-cards .servicos-cards-child{
+    width: 410px;
+    height: 420px;
+
+    background-color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-radius: 10px;
+    padding: 50px 20px 20px 20px;
+
+    margin: 0 50px 30px 0;
+    box-shadow: 3px 4px 35px -10px rgba(0,0,0,0.75);
+}
+
+.servicos-cards .servicos-cards-child:hover{
+    box-shadow: 12px 16px 105px -20px rgba(0,0,0,0.75);
+}
+
+.icon-container{
+    background-color: var(--primary-green);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.servicos-cards div h2{
+    font-family: var(--font-poppins);
+    color: var(--primary-green);
+    margin-bottom: 10px;
+    font-size: 2.5em;
+
+}
+
+.servicos-cards div p{
+    display: none;
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
