@@ -4,26 +4,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo </title>
 
+    <!-- Bootstrap css  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Slick CSS  -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <!-- CSS  -->
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/global.css">
 
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    <!-- Slick JS  -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!-- JS  -->
+    <script type="text/javascript" src="index.js"></script> 
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet"> 
     
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/806f45b2bb.js"></script>
+
+
 </head>
 <body>
 
     <div class="adeca-container">
-        <div class="navbar">
+        <div id="navbar" class="navbar">
             <div class="logo-adeca">
                 <img src="/assets/adeca-preto-vetorizado.png" alt="logo-adeca-navbar">
             </div>
             
             <div class="navbuttons-container">
 
-                <div class="navbuttons">
-                    <a href="/">Home</a>
+                <div id="navbuttons" class="navbuttons ">
+                    <a href="/" class="button-nav">Home</a>
                     <a href="/">Serviços</a>
                     <a href="/">Sobre Nós</a>
                     <a href="/">Membros</a>
@@ -38,14 +60,9 @@
             
         </div>
 
+        <div class="overlay"></div>
         
-        <div class="overlay">
-
-        </div>
-        
-        <div class="home-container">
-            <img src="/assets/home-agroBG.jpg" alt="agro-home-img">
-        </div>
+        <div class="home-container"></div>
 
         <div class="home-container-info">
             <div class="col1">
@@ -60,64 +77,423 @@
         <div class="servicos-container">
 
             <div class="servicos-titulo">
-                <h1>Nossos Serviços</h1>
-                <hr>
+                <h1>Serviços</h1>
+                <h2>Com mais de 17 anos no mercado,<br> podemos te oferecer entendimento<br> mais amplo sobre diversas áreas.</h2>
             </div>
             
             <div class="servicos-cards">
                 <div class="planoNegocio-container servicos-cards-child">
-                    <img src="/assets/business-plan.svg" alt="business-plan-icon" width="100" height="100">
-                    <!-- <svg class="business-plan-icon icon-card-servicos">
-                        <use xlink:href="/assets/business-plan.svg#Capa_1"></use>
-                    </svg> -->
-                      
-                    <h2>Plano de Negócios</h2>
-                    <p>Precisa de um financiamento para seu novo negócio? Quer estruturá-lo de maneira completa? O ADECA Agronegócios realiza seu plano de negócios com qualidade comprovada, com um ótimo custo-benefício. Sumário Executivo, Análise de Mercado, Plano de Marketing, Plano Operacional, Plano Financeiro, tudo será contemplado em nosso projeto. </p>
+                    <div class="servicos-card-front">
+
+                        <div class="icon-container">
+                            
+                            <img src="/assets/business-plan(1).svg" alt="business-plan-icon" width="100" height="100">
+                        </div>
+                        
+                        <h2 class="titulo-front-maior">Plano de Negócios</h2>
+
+                        <div class="button-flip-control1 button-flip"></div>
+                        
+                    </div>
+                    <div class="servicos-card-back">
+                        <div class="button-flip-control1 button-flip button-flip-back">  </div>
+                        <h2 class="titulo-back-menor">Plano de Negócios</h2>
+                        <p>Precisa de um financiamento para seu novo negócio? Quer estruturá-lo de maneira completa? O ADECA Agronegócios realiza seu plano de negócios com qualidade comprovada, com um ótimo custo-benefício. Sumário Executivo, Análise de Mercado, Plano de Marketing, Plano Operacional, Plano Financeiro, tudo será contemplado em nosso projeto. </p>
+
+                    </div>
                 </div>
 
                 <div class="viabilidadeEcon-container servicos-cards-child">
-                    <img src="/assets/economy.svg" alt="economy-icon" width="100" height="100">
+                    <div class="servicos-card-front">
 
-                    <!-- <svg class="economy-icon icon-card-servicos">
-                        <use xlink:href="/assets/economy.svg#Layer_1"></use>
-                    </svg>
-                     -->
-                    <h2>Viabilidade Econômica</h2>
-                    <p>Todos têm capacidade para empreender! Mas isso não significa que não há necessidade de planejamento e sabedoria para colocar um projeto em prática. Com a viabilidade econômica será possível conhecer o mercado em que se deseja entrar, desde clientes a fornecedores e concorrentes, ter todas as informações de como tirar do papel a ideia proposta e quanto isso custará e a partir dos custos saber quais os ganhos esperados em diversas situações (cenários otimistas e pessimistas, por exemplo). </p>
+                        <div class="icon-container">
+                            
+                            <img src="/assets/economy(1).svg" alt="economy-icon" width="100" height="100">
+                        </div>
+                        
+                        <h2 class="titulo-front-maior">Viabilidade Econômica</h2>
+
+                        <div class="button-flip-control2 button-flip"></div>
+                    </div>
+
+                    <div class="servicos-card-back">
+                        <div  class="button-flip-control2 button-flip button-flip-back">  </div>
+                        <h2 class="titulo-back-menor">Viabilidade Econômica</h2>
+                        <p>Todos têm capacidade para empreender! Mas isso não significa que não há necessidade de planejamento e sabedoria para colocar um projeto em prática. Com a viabilidade econômica será possível conhecer o mercado em que se deseja entrar, desde clientes a fornecedores e concorrentes, ter todas as informações de como tirar do papel a ideia proposta e quanto isso custará e a partir dos custos saber quais os ganhos esperados em diversas situações. </p>
+                    </div>
                 </div>
 
                 <div class="analiseSeg-container servicos-cards-child">
-                    <div class="icon-container">
-                        <img src="/assets/magnifying-glass(1).svg" alt="magnifying-glass-icon" width="50" height="50">
+
+                    <div class="servicos-card-front">
+
+                        <div class="icon-container">
+                            <img src="/assets/magnifying-glass(1).svg" alt="magnifying-glass-icon" width="100" height="100">
+                        </div>
+                        
+                        <h2 class="titulo-front-maior">Análise de Segmentos</h2>
+
+                        <div class="button-flip-control3 button-flip"></div>
                     </div>
-                    <!-- <svg class="magnifying-glass-icon icon-card-servicos">
-                        <use xlink:href="/assets/magnifying-glass.svg#magglass"></use>
-                    </svg> -->
-                    
-                    <h2>Análise de Segmentos</h2>
-                    <p>Conhecimento nunca é demais! Seja uma análise completa do seu setor de atuação, abordando clientes, concorrentes, situação do segmento alvo em níveis mundial, nacional e regional, e fornecedores ou uma pesquisa para obtenção de respostas sobre, por exemplo, se determinados indivíduos comprariam seu produto, nós fazemos para você! </p>
+
+                    <div class="servicos-card-back">
+                        <div class="button-flip-control3 button-flip button-flip-back">  </div>
+                        <h2 class="titulo-back-menor">Análise de Segmentos</h2>
+                        <p>Conhecimento nunca é demais! Seja uma análise completa do seu setor de atuação, abordando clientes, concorrentes, situação do segmento alvo em níveis mundial, nacional e regional, e fornecedores ou uma pesquisa para obtenção de respostas sobre, por exemplo, se determinados indivíduos comprariam seu produto, nós fazemos para você! </p>
+                    </div>
                 </div>
 
                 <div class="orgFinanceira-container servicos-cards-child">
-                    <img src="/assets/finance.svg" alt="finance-icon" width="100" height="100">
-                    <!-- <svg class="finance-icon icon-card-servicos">
-                        <use xlink:href="/assets/finance.svg#Capa_1"></use>
-                    </svg> -->
+                    <div class="servicos-card-front">
 
-                    <h2>Organização Financeira</h2>
-                    <p>Muitos negócios erram ao não contabilizar de maneira correta seus fluxos contábeis, o que pode levar a uma falsa sensação de prosperidade, pois na verdade não se está lucrando aquilo o que se pensava ou mesmo não há lucro algum. O ADECA faz sua contabilidade para garantir que tudo esteja nos eixos! </p>
+                        <div class="icon-container">
+                            
+                            <img src="/assets/finance(1).svg" alt="finance-icon" width="100" height="100">
+                        </div>
+                        
+                        <h2 class="titulo-front-maior">Organização Financeira</h2>
+                        <div class="button-flip-control4 button-flip"></div>
+                    </div>
+
+                    <div class="servicos-card-back">
+                        <div class="button-flip-control4  button-flip button-flip-back">  </div>
+                        <h2 class="titulo-back-menor">Organização Financeira</h2>
+                        <p>Muitos negócios erram ao não contabilizar de maneira correta seus fluxos contábeis, o que pode levar a uma falsa sensação de prosperidade, pois na verdade não se está lucrando aquilo o que se pensava ou mesmo não há lucro algum. O ADECA faz sua contabilidade para garantir que tudo esteja nos eixos! </p>
+                    </div>
                 </div>
 
                 <div class="elaboConteudo-container servicos-cards-child" >
-                    <img src="/assets/web-design.svg" alt="web-desigin-icon" width="100" height="100"> 
-                    <!-- <svg class="web-design-icon icon-card-servicos">
-                        <use xlink:href="/assets/web-design.svg#surface1"></use>
-                    </svg> -->
-                    <h2>Elaboração de Conteúdo</h2>
-                    <p>Produção de notícias, whitepapers e artigos de opinião: temos o que você precisa para realizar inbound marketing ou movimentar suas redes! </p>
+                    <div class="servicos-card-front">
+
+                        <div class="icon-container">
+                            <img src="/assets/web-design(1).svg" alt="web-desigin-icon" width="100" height="100"> 
+                        </div>
+                        <h2 class="titulo-front-maior"> Elaboração de Conteúdo</h2>
+                        <div class="button-flip-control5 button-flip"></div>
+                    </div>
+
+                    <div class="servicos-card-back">
+                        <div class="button-flip-control5 button-flip button-flip-back">  </div>
+                        <h2 class="titulo-back-menor">Elaboração de Conteúdo</h2>
+                        <p>Produção de notícias, whitepapers e artigos de opinião: temos o que você precisa para realizar inbound marketing ou movimentar suas redes! </p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="conquistas-container">
+            <div class="overlay-conq"></div>
+            <div class="conquistas-child">
+                <i class="fa fa-users fa-4x" aria-hidden="true" ></i>
+                <h3>372</h3>
+                <p>Clientes satisfeitos</p>
+            </div>
+            <div class="conquistas-child">
+                <i class="fa fa-check fa-4x" aria-hidden="true"></i>
+                <h3>124</h3>
+                <p>Projetos realizados</p>
+            </div>
+
+            <div class="conquistas-child">
+                <i class="fa fa-coffee fa-4x" aria-hidden="true"></i>
+                <h3>5k</h3>
+                <p>Copos de café</p>
+            </div>
+
+            <div class="conquistas-child">
+                <i class="fa fa-line-chart fa-4x" aria-hidden="true"></i>
+                <h3>269</h3>
+                <p>Agricultores ajudados</p>
+            </div>
+        </div>
+
+        <div class="membros-container">
+            <div class="servicos-titulo">
+                <h1>Membros</h1>
+                <h2>Conheça nossos profissionais</h2>
+            </div>
+            <div class="carousel-slider">
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/gala.jpg" alt="galadriel">
+                    </div>
+
+                    <h3>Helena Martins</h3>
+                    <p>Analista de Recursos Humanos</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/Caio-Rosateli.jpg" alt="caio">
+                    </div>
+                    
+                    <h3>Caio Rosateli</h3>
+                    <p>Presidente</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/Luis-Felipe-Speranza.jpg" alt="caio">
+                    </div>
+                    <h3>Luis Felipe Esperanza</h3>
+                    <p>Vice presidente e Analista de Marketing</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/gala.jpg" alt="galadriel">
+                    </div>
+                    <h3>Antonio Henrique Veronese</h3>
+                    <p>Gestor Jurídico-Financeiro</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/gala.jpg" alt="galadriel">
+                    </div>
+                    <h3>Vitor Lima</h3>
+                    <p>Gestor de Negócios</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/gala.jpg" alt="galadriel">
+                    </div>
+                    <h3>Beatriz Sizilio</h3>
+                    <p>Gestora de Marketing</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/gala.jpg" alt="galadriel">
+                    </div>
+                    <h3>Renato Cintra Camargo</h3>
+                    <p>Gestor de Qualidade</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/gala.jpg" alt="galadriel">
+                    </div>
+                    <h3>Luiz Henrique Melo</h3>
+                    <p>Gestor de Recursos Humanos</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/gala.jpg" alt="galadriel">
+                    </div>
+                    <h3>Felipe Wohnrath</h3>
+                    <p>Gestor de Recursos Humanos</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/gala.jpg" alt="galadriel">
+                    </div>
+                    <h3>Patrick Rechi Berquó</h3>
+                    <p>Analista de Negócios</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/gala.jpg" alt="galadriel">
+                    </div>
+                    <h3>Lígia Garcia</h3>
+                    <p>Analista de Marketing</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-card-child">
+                    <div class="image-container-membros">
+                        <img src="/assets/membros/gala.jpg" alt="galadriel">
+                    </div>
+                    <h3>Guilherme Caus</h3>
+                    <p>Analista de Qualidade</p>
+
+                    <div class="social-media-buttons">
+                        <a href="/" class="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="/">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+
+        <div class="about-container">
+            
+            <div class="about-col1">
+                <div class="about-titulo">
+                    <h2>Sobre Nós</h2>
+                </div>
+
+                <div class="about-body">
+
+                    <h2>Profissional + Acadêmico</h2>
+                    
+                    <p>O ADECA Agronegócios é um grupo de extensão da ESALQ/USP formado em 2003 que busca unir o conhecimento acadêmico e profissional. Orientado pelo professor Sergio de Zen, seus membros são dos diferentes cursos de graduação da própria instituição, garantindo um entendimento mais amplo sobre diversas áreas.
+                        Integrado ao Centro de Estudos Avançados em Economia Aplicada (Cepea), que conta com especialistas das cadeias agropecuárias, o grupo recebe apoio dos pesquisadores e professores tanto da universidade como do centro, proporcionando uma maior credibilidade e qualidade aos projetos.</p>
+
+                    <a href="/">Sobre Nós</a>
+                </div>
+
+            </div>
+
+            <div class="about-col2"></div>
+
+        </div>
+
 
     </div>
     
