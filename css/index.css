@@ -5,6 +5,34 @@ body{
 }
 
 
+
+
+/* Shared  */
+.section-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title h2{
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    font-size: 2.3em;
+    margin-top: 20px;
+    margin: 35px 0; 
+    text-align: center;
+}
+
+.section-title h1{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 1.1em;
+    color: var(--primary-green);
+    margin: 50px 0 0 0;
+}
+
+
 /* Navbar  */
 .navbar{
     position: absolute;
@@ -27,14 +55,11 @@ body{
 .navbar-sticky{
     position: fixed;
     top: 0;
-    background-color: var(--primary-green);
+    background-color: #fff;
     z-index: 3;
-
-}
-
-.navbuttons-sticky{
-    color: black;
-    z-index: 3;
+    transition: .9s all ease;
+    padding: 0 30px;
+    height: 60px;
 
 }
 
@@ -42,6 +67,14 @@ body{
     width: 70px;
     height: 70px;
 }
+
+.logoadeca-sticky img{
+    align-self: center;
+    width: 45px;
+    height: 45px;
+}
+
+
 
 .navbuttons-container{
     width: 800px;
@@ -70,8 +103,16 @@ body{
     transition:0.5;
 }
 
+
 .navbuttons a:hover {
     border-bottom: 2px solid var(--primary-green);
+}
+
+.navbuttons-sticky a{
+    color: #000!important;
+    z-index: 3;
+    text-align: center;
+
 }
 
 .navbuttonContato{
@@ -194,31 +235,6 @@ body{
 .servicos-container{
     width: 100vw;
 }
-
-.servicos-titulo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.servicos-titulo h2{
-    font-family: var(--font-poppins);
-    font-weight: 300;
-    font-size: 2.3em;
-    margin-top: 20px;
-    margin: 35px 0; 
-    text-align: center;
-}
-
-.servicos-titulo h1{
-    font-family: var(--font-poppins);
-    font-weight: 600;
-    font-size: 1.1em;
-    color: var(--primary-green);
-    margin: 50px 0 0 0;
-}
-
 
 
 .servicos-cards{
@@ -603,6 +619,25 @@ body{
 
 }
 
+/* Contato  */
+
+.contato-container{
+    height: 65vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contato-title{
+}
+
+.contato-form{
+    height: 80%;
+
+}
 
 
 

@@ -2,19 +2,26 @@ $(document).ready(function() {
   
   // Fixed navbar on Scroll
   let header = $('#navbar');
-  let navbuttons = $('.button-nav');
+  let navbuttons = $('.navbuttons');
+  let logoadeca = $('.logo-adeca');
   let sticky = header.offset().top;
 
   function navbarOnScroll() {
 
     if (window.pageYOffset > sticky) {
-      navbuttons.addClass('navbuttons-sticky')
+      navbuttons.addClass('navbuttons-sticky');
+      logoadeca.addClass('logoadeca-sticky');
       header.addClass("navbar-sticky");
+
+      $(".logo-adeca-img").attr("src","assets/adeca-verde-vetorizado.png");
 
     } 
     else {
       header.removeClass("navbar-sticky");
       navbuttons.removeClass('navbuttons-sticky')
+      logoadeca.removeClass('logoadeca-sticky');
+
+      $(".logo-adeca-img").attr("src","assets/adeca-preto-vetorizado.png");
     }
   }
 
