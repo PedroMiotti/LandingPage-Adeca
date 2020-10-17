@@ -629,17 +629,76 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    background-color: #fff;
 }
 
-.contato-title{
-}
 
 .contato-form{
     height: 80%;
+    width: 40%;
 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contato-form input{
+    border: 1px solid var(--primary-green);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contato-form .form-row1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.contato-form .form-row1 input{
+    width: 45%;
+    margin-left: 10px;
+}
+
+.contato-form .form-row2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 20px;
 }
 
 
+.contato-form .form-row2 input{
+    width: 90%;
+}
+
+
+.contato-form .form-row3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+.contato-form .form-row3 textarea{
+    width: 90%;
+    border: 1px solid var(--primary-green);
+    border-radius: 10px;
+    padding: 20px;
+    resize: vertical;
+
+
+    
+}
 
 
 

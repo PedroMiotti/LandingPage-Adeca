@@ -4,8 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo </title>
 
-    <!-- Bootstrap css  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   
     <!-- Slick CSS  -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -16,9 +15,6 @@
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Bootstrap JS  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     
     <!-- Slick JS  -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -503,10 +499,20 @@
             </div>
 
             <div class="contato-form">
-                <input type="text" name="nome" id="">
-                <input type="text" name="sobrenome" id="">
-                <input type="text" name="email" id="">
-                <textarea type="text" name="Comentario" >
+                <div class="form-row1">
+                    <input type="text" name="nome" id="" placeholder="Nome">
+                    <input type="text" name="sobrenome" id="" placeholder="E-mail">
+                </div>
+
+                <div class="form-row2">
+                    <input type="text" name="email" id="" placeholder="Assunto">
+                </div>
+
+                <div class="form-row3">
+                    <textarea type="text" name="Comentario" placeholder="Mensagem">
+                </div>
+
+                <a href="/">Enviar</a>
 
             </div>  
 
