@@ -1,9 +1,27 @@
 $(document).ready(function() {
   
+
+  // Sidenav toggle
+  let sidenav = $('.sidebar-container');
+  let openBtt = $('.hamburguer-menu');
+  let closeBtt = $('.close-sidenav');
+  
+  openBtt.click(() => {
+    sidenav.addClass('toggle-sidenav');
+
+  })
+
+  closeBtt.click(() => {
+    sidenav.removeClass('toggle-sidenav');
+
+  })
+
+
   // Fixed navbar on Scroll
   let header = $('#navbar');
   let navbuttons = $('.navbuttons');
   let logoadeca = $('.logo-adeca');
+
   let sticky = header.offset().top;
 
   function navbarOnScroll() {

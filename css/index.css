@@ -32,6 +32,53 @@ body{
 }
 
 
+/* Sidebar */
+.sidebar-container{
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 50vw;
+
+    z-index: 4;
+    padding: 20px;
+
+    border-bottom-left-radius: 200px;
+
+    background-color: var(--primary-green);
+
+}
+
+.close-sidenav{
+    color: #fff;
+}
+
+.sidebuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.sidebuttons a{
+    display: block;
+    
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+
+    font-family: var(--font-poppins);
+    color: #fff;
+}
+
+.toggle-sidenav{
+    display: block;
+}
+
+
 /* Navbar  */
 .navbar{
     position: absolute;
