@@ -1,6 +1,5 @@
 body{
     overflow-x: hidden;
-    /* background-color: var(--primary-green); */
     background-color: #ddd;
 }
 
@@ -62,6 +61,11 @@ body{
     height: 60px;
 
 }
+
+.hamburguer-menu{
+    display: none;
+}
+
 
 .logo-adeca img{
     width: 70px;
@@ -144,7 +148,6 @@ body{
     opacity: 0.5;
 
     border-bottom-left-radius: 400px;
-
 
 }
 
@@ -554,13 +557,11 @@ body{
 
 
 
-
-
 /* Membros  */
 
 .membros-container{
     width: 100vw;
-    height: 70vh;
+    height: 700px;
 
 }
 
@@ -623,7 +624,7 @@ body{
 /* Contato  */
 
 .contato-container{
-    height: 55vh;
+    height: 600px;
     width: 100vw;
 
     display: flex;
@@ -686,8 +687,6 @@ body{
     justify-content: center;
     align-items: center;
     
-
-
 }
 
 .contato-form .form-row3 input{
@@ -722,3 +721,120 @@ body{
 
 
 
+/* Mobile  */
+@media screen and (max-width: 425px){
+
+    /* Navbar  */
+    .navbuttonContato,
+    .navbuttons{
+        display: none;
+    }
+
+    .navbuttons-container{
+        justify-content: flex-end;
+    }
+
+    .hamburguer-menu{
+        display: block;
+    }
+
+
+    
+    /* Home  */
+    .home-container,
+    .overlay{
+        border-bottom-left-radius: 0;
+    }
+    
+    .home-container-info{
+        bottom: 0;
+    }
+    
+    .home-container-info .col1 p{
+        width: 290px;
+        overflow: hidden;
+        border-right: 0;
+        white-space: pre-wrap;
+        margin: 0 ;
+        animation: none;
+    }
+
+
+    /* Servicos  */
+    .servicos-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .servicos-cards .servicos-cards-child{
+        
+        margin: 0 0 20px 0;
+        width: 340px;
+    }
+
+
+    /* Conquistas  */
+    .conquistas-container{
+        height: 484px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0;
+
+    }
+
+    .overlay-conq{
+        height: 484px;
+    }
+
+    .conquistas-child {
+        margin-bottom: 15px;
+    }
+
+    .conquistas-child:last-child{
+        margin-bottom: 0;
+    }
+
+
+    /* Contato  */
+    .contato-form{
+        
+        width: 97%;
+    }
+
+    .contato-form .form-row1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    
+        margin-bottom: 20px;
+    }
+
+    .contato-form .form-row1 input{
+        width: 90%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    #email-input{
+        margin-bottom: 0;
+    }
+ 
+    .botaoEnviar{
+        width: 230px;
+        height: 50px;
+        line-height: 50px;
+    
+    }
+    
+    .botaoEnviar a{
+        text-decoration: none;
+        color: #ffff;
+        font-family: var(--font-poppins);
+    }
+}

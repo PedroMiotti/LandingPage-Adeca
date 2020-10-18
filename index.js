@@ -12,7 +12,7 @@ $(document).ready(function() {
       navbuttons.addClass('navbuttons-sticky');
       logoadeca.addClass('logoadeca-sticky');
       header.addClass("navbar-sticky");
-
+  
       $(".logo-adeca-img").attr("src","assets/adeca-verde-vetorizado.png");
 
     } 
@@ -62,7 +62,9 @@ $(document).ready(function() {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        
+        autoplay: true,
+        autoplaySpeed: 2000,
+
         responsive: [
           {
             breakpoint: 1024,
@@ -87,6 +89,3 @@ $(document).ready(function() {
   });
 
 
-
-  /*autoplay: true,
-        autoplaySpeed: 2000,*/
