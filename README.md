@@ -4,7 +4,7 @@
 
 Simple landing page with HTMl, CSS and JS 
 
-You can visit da website (here)[https://adeca-landing-page.netlify.app]
+You can visit da website [here](https://adeca-landing-page.netlify.app)
 
 
 
