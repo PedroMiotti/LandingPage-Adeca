@@ -2,9 +2,8 @@
 
 # Landing-Page-Adeca
 
-Simple landing page with HTMl, CSS and JS 
+Simple landing page written with HTMl, CSS and JS.
 
-You can visit da website [here](https://adeca-landing-page.netlify.app)
+You can visit the website [here](https://adeca-landing-page.netlify.app).
 
-
-
+For the web development class, taught by [Carlos Rafael](https://github.com/carlosrafaelgn) at [ESPM](https://github.com/tech-espm) College.
