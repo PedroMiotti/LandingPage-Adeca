@@ -2,7 +2,7 @@
 
 # Landing-Page-Adeca
 
-Simple landing page written with HTMl, CSS and JS.
+Simple landing page written with HTML, CSS and JS.
 
 You can visit the website [here](https://adeca-landing-page.netlify.app).
 
