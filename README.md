@@ -2,8 +2,9 @@
 
 # Landing-Page-Adeca
 
-Simple landing page written with HTML, CSS and JS.
+Simple landing page written with HTML, CSS and JS, for the web development class, taught by [Carlos Rafael](https://github.com/carlosrafaelgn) at [ESPM](https://github.com/tech-espm) College.
+
 
 You can visit the website [here](https://adeca-landing-page.netlify.app).
 
-For the web development class, taught by [Carlos Rafael](https://github.com/carlosrafaelgn) at [ESPM](https://github.com/tech-espm) College.
+
