@@ -465,8 +465,11 @@ body{
         height: auto;
     }
 
-    .modal-row2-form input[name='receber-por']{
-        margin-left: 10px;
+
+
+    .modal-row2-form input[name='receber-por']:after {
+        font-size: 30px;
+        margin-left: 15px;
     }
 
     #modal-form .submitbutton{
@@ -479,7 +482,7 @@ body{
     }
 
     .modal-row2-form form .form-body input{
-        margin-left: 10px;
+        width: 80%;
     }
 }
 
