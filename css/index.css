@@ -463,8 +463,10 @@ body{
         top: 15vh; 
         width: 100vw;
         height: auto;
-    
-    
+    }
+
+    .modal-row2-form input[name='receber-por']{
+        margin-left: 10px;
     }
 
     #modal-form .submitbutton{
@@ -474,6 +476,10 @@ body{
 
     .modal-conteudo-container .modal-row2-form{
         padding: 0;
+    }
+
+    .modal-row2-form form .form-body input{
+        margin-left: 10px;
     }
 }
 
