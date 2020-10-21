@@ -33,7 +33,8 @@ body{
 /* Sidebar */
 .sidebar-container{
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 0;
     right: 0;
     height: 100vh;
     width: 50vw;
@@ -313,7 +314,7 @@ body{
     background-color: #fff;
     border-radius: 30px;
 
-    transition: .9s all ease-in;
+    transition: .9s ease;
 
 }
 
@@ -398,6 +399,7 @@ body{
     border-radius: 15px;
 }
 
+
 .modal-row2-form input[name='receber-por']:after {
         font-family: 'FontAwesome';
         content: attr(data-icon);
@@ -466,10 +468,13 @@ body{
     }
 
 
+    .modal-row2-form input[name='receber-por']{
+        margin-left: 19px;
+
+    }
 
     .modal-row2-form input[name='receber-por']:after {
         font-size: 30px;
-        margin-left: 15px;
     }
 
     #modal-form .submitbutton{
@@ -1088,7 +1093,7 @@ body{
 
 /* Scroll top button  */
 .back-top-button{
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
 
@@ -1097,6 +1102,10 @@ body{
     border-radius: 50%;
 
     box-shadow: 3px 4px 35px -10px rgba(0,0,0,0.75);
+
+    cursor: pointer;
+
+    transition: .9s ease ;
 }
 
 /* Mobile  */

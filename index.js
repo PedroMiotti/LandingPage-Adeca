@@ -1,20 +1,7 @@
 $(document).ready(function() {
   
 
-  // Sidenav toggle
-  let sidenav = $('.sidebar-container');
-  let openBtt = $('.hamburguer-menu');
-  let closeBtt = $('.close-sidenav');
-  
-  openBtt.click(() => {
-    sidenav.addClass('toggle-sidenav');
 
-  })
-
-  closeBtt.click(() => {
-    sidenav.removeClass('toggle-sidenav');
-
-  })
 
   // Fixed navbar on Scroll
   let header = $('#navbar');
@@ -41,6 +28,22 @@ $(document).ready(function() {
       $(".logo-adeca-img").attr("src","assets/adeca-preto-vetorizado.png");
     }
   }
+
+
+    // Sidenav toggle
+    let sidenav = $('.sidebar-container');
+    let openBtt = $('.hamburguer-menu');
+    let closeBtt = $('.close-sidenav');
+    
+    openBtt.click(() => {
+      sidenav.addClass('toggle-sidenav');
+  
+    })
+  
+    closeBtt.click(() => {
+      sidenav.removeClass('toggle-sidenav');
+  
+    })
 
 
   // Show modal on scroll
@@ -90,6 +93,12 @@ $(document).ready(function() {
   let closeBttModal = $('#close-modal-btt');
   closeBttModal.click(() => {
     closeModal();
+  })
+
+
+  // Scroll to top button 
+  $('#back-top-button').click(() => {
+    window.scrollTo(0, 0);
   })
 
 
