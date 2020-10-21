@@ -466,6 +466,15 @@ body{
     
     
     }
+
+    #modal-form .submitbutton{
+        width: 90%;
+        margin: 10px;
+    }
+
+    .modal-conteudo-container .modal-row2-form{
+        padding: 0;
+    }
 }
 
 
