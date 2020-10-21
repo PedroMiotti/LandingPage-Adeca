@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulo </title>
+    <title>Adeca - Agro </title>
 
    
     <!-- Slick CSS  -->
@@ -42,7 +42,6 @@
             <a href="#servicos">Serviços</a>
             <a href="#about">Sobre Nós</a>
             <a href="#membros">Membros</a>
-            <a href="#contato">Contato</a>
         </div>
     </div>
 
@@ -84,6 +83,45 @@
                 <h1> <span>ADECA</span> <br/> Agronegócio</h1>
                 <br/>
                 <p>Planejando o presente para garantir o futuro</p>
+                
+            </div>
+        </div>
+
+
+        <div class="hide-overlay-modal" id="overlay-modal"></div>
+        <div class="hide-modal" id="modal-conteudo" role="dialog" displayed="false">
+
+
+            <div class="modal-row1">
+                <img src="/assets/letter.png" alt="letter-icons">
+
+                <a id="close-modal-btt">Fechar</a>
+            </div>
+
+            <div class="triangle"></div>
+            
+            <div class="modal-row2-form">
+                <h1>SE INSCREVA !</h1>
+                <p>Quer receber o nosso conteudo ?</p>
+
+                <form id="modal-form">
+                    <div class="form-enviarpor">
+                        <label for="">Receber por :</label>
+                        <input type="radio" name="receber-por" value="whats" data-icon="&#xf232;" id="whats-radio" checked>
+                        <input type="radio" name="receber-por" value="email" data-icon="&#xf003;" id="email-radio">
+                    </div>
+
+                    <div class="form-body">
+                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="E-mail" id="email-input">
+                        <input type="text" placeholder="Telefone" id="tel-input">
+
+                    </div>
+
+                    <div class="submitbutton">
+                        <a href="/">Cadastrar</a>
+                    </div>
+                </form>
                 
             </div>
         </div>
@@ -547,19 +585,39 @@
         <div class="footer-container">
 
             <div class="col1">
+                <img src="/assets/adeca-preto-vetorizado.png" alt="logo-adeca">
 
+                <h4>Fale Conosco</h4>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;adeca@cepea.org.br</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;(19) 3429-8855</p>
             </div>
 
             <div class="col2">
-
+                <a href="/" >Home</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#about">Sobre Nós</a>
+                <a href="#membros">Membros</a>
             </div>
             
             <div class="col3">
-
+                <a href="/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                <a href="/"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                <a href="/"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                <a href="/"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
             </div>
         </div>
 
+        <hr style="height: 0.2;">
+        
+        <div class="creator-container">
+            <p>Desenvolvido por <a href="https://github.com/PedroMiotti">Pedro Miotti</a>&nbsp;&nbsp;<i class="fa fa-bolt" aria-hidden="true" style="color: rgb(228, 172, 52);"></i></p>
+        </div>
 
+
+
+        <!-- <div class="back-top-button">
+            <a> <i class="fa fa-arrow-up" aria-hidden="true" style="color: #fff;"></i></a>
+        </div> -->
     </div>
     
 </body>
