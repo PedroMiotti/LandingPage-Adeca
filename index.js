@@ -1,7 +1,4 @@
 $(document).ready(function() {
-  
-
-
 
   // Fixed navbar on Scroll
   let header = $('#navbar');
@@ -112,9 +109,6 @@ $(document).ready(function() {
   }
 
 
-
-
-
   // toggle input inside modal
   let whatsChecked = $('#whats-radio');
   let emailChecked = $('#email-radio');
@@ -123,8 +117,6 @@ $(document).ready(function() {
   emailInput.addClass('hide-form-input')
 
   let telInput = $('#tel-input');
-
-  // let valorRadio = $('input[name=receber-por]:checked').val();
   
   emailChecked.click(() => {
     telInput.toggleClass('hide-form-input')
@@ -137,8 +129,6 @@ $(document).ready(function() {
   })
 
 
-
-  
     // Servicos card flip animation
     $('.button-flip-control1').click(function() {
       $('.planoNegocio-container').toggleClass('flipped');
